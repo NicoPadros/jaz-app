@@ -14,7 +14,7 @@ class StubData {
       name: 'Ciro Gelato',
       description:
           'Linda vista, muchos combos para elegir, se llena. Pierina Dealessi 1350 Dique 2, C1107 CABA',
-      category: PlaceCategory.wantToGo,
+      category: PlaceCategory.visited,
       starRating: 4,
     ),
     Place(
@@ -140,6 +140,96 @@ class StubData {
       name: 'Barbas NY Pilar',
       description:
           'Recomendable la Classic Burger. Cuidado con el estacionamiento (por inseguridad)',
+      category: PlaceCategory.visited,
+      starRating: 5,
+    ),
+    Place(
+      id: '15',
+      latLng: LatLng(-34.44340950562042, -58.8613672170735),
+      name: 'Circo Rodas',
+      description:
+      'Recomendable la Classic Burger. Cuidado con el estacionamiento (por inseguridad)',
+      category: PlaceCategory.visited,
+      starRating: 5,
+    ),
+    Place(
+      id: '15',
+      latLng: LatLng(-34.44340950562042, -58.8613672170735),
+      name: 'SUSHI CLUB',
+      description:
+      'Recomendable la Classic Burger. Cuidado con el estacionamiento (por inseguridad)',
+      category: PlaceCategory.visited,
+      starRating: 5,
+    ),
+    Place(
+      id: '15',
+      latLng: LatLng(-34.44340950562042, -58.8613672170735),
+      name: 'La Cantina de Mario',
+      description:
+      'Recomendable la Classic Burger. Cuidado con el estacionamiento (por inseguridad)',
+      category: PlaceCategory.visited,
+      starRating: 5,
+    ),
+    Place(
+      id: '15',
+      latLng: LatLng(-34.44340950562042, -58.8613672170735),
+      name: 'Selvática',
+      description:
+      'Recomendable la Classic Burger. Cuidado con el estacionamiento (por inseguridad)',
+      category: PlaceCategory.visited,
+      starRating: 5,
+    ),
+    Place(
+      id: '15',
+      latLng: LatLng(-34.44340950562042, -58.8613672170735),
+      name: "Malloy's",
+      description:
+      'Recomendable la Classic Burger. Cuidado con el estacionamiento (por inseguridad)',
+      category: PlaceCategory.visited,
+      starRating: 5,
+    ),
+    Place(
+      id: '15',
+      latLng: LatLng(-34.44340950562042, -58.8613672170735),
+      name: 'Dallone',
+      description:
+      'Recomendable la Classic Burger. Cuidado con el estacionamiento (por inseguridad)',
+      category: PlaceCategory.visited,
+      starRating: 5,
+    ),
+    Place(
+      id: '15',
+      latLng: LatLng(-34.44340950562042, -58.8613672170735),
+      name: 'Gluck (parking)',
+      description:
+      'Recomendable la Classic Burger. Cuidado con el estacionamiento (por inseguridad)',
+      category: PlaceCategory.visited,
+      starRating: 5,
+    ),
+    Place(
+      id: '15',
+      latLng: LatLng(-34.44340950562042, -58.8613672170735),
+      name: 'Olivier',
+      description:
+      'Recomendable la Classic Burger. Cuidado con el estacionamiento (por inseguridad)',
+      category: PlaceCategory.visited,
+      starRating: 5,
+    ),
+    Place(
+      id: '15',
+      latLng: LatLng(-34.44340950562042, -58.8613672170735),
+      name: 'Fika',
+      description:
+      'Recomendable la Classic Burger. Cuidado con el estacionamiento (por inseguridad)',
+      category: PlaceCategory.visited,
+      starRating: 5,
+    ),
+    Place(
+      id: '15',
+      latLng: LatLng(-34.44340950562042, -58.8613672170735),
+      name: 'London Post',
+      description:
+      'Recomendable la Classic Burger. Cuidado con el estacionamiento (por inseguridad)',
       category: PlaceCategory.visited,
       starRating: 5,
     ),

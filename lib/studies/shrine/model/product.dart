@@ -42,13 +42,18 @@ Category categoryFav = Category(
   name: (context) => 'Mis Favoritas',
 );
 
+Category categoryPuertoMadero = Category(
+  name: (context) => 'SUSHI NIGHT',
+);
+
 List<Category> categories = [
   categoryAll,
   categoryTigre,
   categoryCar,
   categoryOther,
   categoryColonia,
-  categoryFav
+  categoryFav,
+  categoryPuertoMadero
 ];
 
 class Product {

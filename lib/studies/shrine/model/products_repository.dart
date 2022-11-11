@@ -215,142 +215,205 @@ class ProductsRepository {
         price: 70,
         assetAspectRatio: 219 / 329,
       ),
+      Product(
+        category: categoryOther,
+        id: 1728,
+        isFeatured: false,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductChambrayShirt,
+        price: 70,
+        assetAspectRatio: 329 / 221,
+      ),
+      Product(
+        category: categoryFav,
+        id: 1730,
+        isFeatured: true,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductSeabreezeSweater,
+        price: 60,
+        assetAspectRatio: 220 / 329,
+      ),
+      Product(
+        category: categoryFav,
+        id: 1732,
+        isFeatured: false,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductGentryJacket,
+        price: 178,
+        assetAspectRatio: 329 / 219,
+      ),
+      Product(
+        category: categoryOther,
+        id: 1733,
+        isFeatured: false,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductNavyTrousers,
+        price: 74,
+        assetAspectRatio: 220 / 329,
+      ),
+      Product(
+        category: categoryOther,
+        id: 1734,
+        isFeatured: true,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductWalterHenleyWhite,
+        price: 38,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryPuertoMadero,
+        id: 1771,
+        isFeatured: true,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductSurfAndPerfShirt,
+        price: 48,
+        assetAspectRatio: 329 / 219,
+      ),
+      Product(
+        category: categoryFav,
+        id: 1774,
+        isFeatured: true,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductGingerScarf,
+        price: 98,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryPuertoMadero,
+        id: 1777,
+        isFeatured: true,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductRamonaCrossover,
+        price: 68,
+        assetAspectRatio: 220 / 329,
+      ),
+      Product(
+        category: categoryPuertoMadero,
+        id: 1783,
+        isFeatured: false,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductChambrayShirt,
+        price: 38,
+        assetAspectRatio: 329 / 223,
+      ),
+      Product(
+        category: categoryPuertoMadero,
+        id: 1784,
+        isFeatured: false,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductClassicWhiteCollar,
+        price: 58,
+        assetAspectRatio: 221 / 329,
+      ),
+      Product(
+        category: categoryFav,
+        id: 1785,
+        isFeatured: true,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductCeriseScallopTee,
+        price: 42,
+        assetAspectRatio: 329 / 219,
+      ),
+      Product(
+        category: categoryPuertoMadero,
+        id: 1796,
+        isFeatured: false,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductShoulderRollsTee,
+        price: 27,
+        assetAspectRatio: 220 / 329,
+      ),
+      Product(
+        category: categoryFav,
+        id: 1797,
+        isFeatured: false,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductGreySlouchTank,
+        price: 24,
+        assetAspectRatio: 222 / 329,
+      ),
       // Product(
-      //   category: categoryClothing,
-      //   id: 23,
+      //   category: categoryFav,
+      //   id: 1730,
       //   isFeatured: false,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductChambrayShirt,
-      //   price: 70,
-      //   assetAspectRatio: 329 / 221,
-      // ),
-      // Product(
-      //   category: categoryClothing,
-      //   id: 24,
-      //   isFeatured: true,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductSeabreezeSweater,
-      //   price: 60,
-      //   assetAspectRatio: 220 / 329,
-      // ),
-      // Product(
-      //   category: categoryClothing,
-      //   id: 25,
-      //   isFeatured: false,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductGentryJacket,
-      //   price: 178,
-      //   assetAspectRatio: 329 / 219,
-      // ),
-      // Product(
-      //   category: categoryClothing,
-      //   id: 26,
-      //   isFeatured: false,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductNavyTrousers,
-      //   price: 74,
-      //   assetAspectRatio: 220 / 329,
-      // ),
-      // Product(
-      //   category: categoryClothing,
-      //   id: 27,
-      //   isFeatured: true,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductWalterHenleyWhite,
-      //   price: 38,
-      //   assetAspectRatio: 219 / 329,
-      // ),
-      // Product(
-      //   category: categoryClothing,
-      //   id: 28,
-      //   isFeatured: true,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductSurfAndPerfShirt,
-      //   price: 48,
-      //   assetAspectRatio: 329 / 219,
-      // ),
-      // Product(
-      //   category: categoryClothing,
-      //   id: 29,
-      //   isFeatured: true,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductGingerScarf,
-      //   price: 98,
-      //   assetAspectRatio: 219 / 329,
-      // ),
-      // Product(
-      //   category: categoryClothing,
-      //   id: 30,
-      //   isFeatured: true,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductRamonaCrossover,
-      //   price: 68,
-      //   assetAspectRatio: 220 / 329,
-      // ),
-      // Product(
-      //   category: categoryClothing,
-      //   id: 31,
-      //   isFeatured: false,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductChambrayShirt,
-      //   price: 38,
-      //   assetAspectRatio: 329 / 223,
-      // ),
-      // Product(
-      //   category: categoryClothing,
-      //   id: 32,
-      //   isFeatured: false,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductClassicWhiteCollar,
-      //   price: 58,
-      //   assetAspectRatio: 221 / 329,
-      // ),
-      // Product(
-      //   category: categoryClothing,
-      //   id: 33,
-      //   isFeatured: true,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductCeriseScallopTee,
-      //   price: 42,
-      //   assetAspectRatio: 329 / 219,
-      // ),
-      // Product(
-      //   category: categoryClothing,
-      //   id: 34,
-      //   isFeatured: false,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductShoulderRollsTee,
-      //   price: 27,
-      //   assetAspectRatio: 220 / 329,
-      // ),
-      // Product(
-      //   category: categoryClothing,
-      //   id: 35,
-      //   isFeatured: false,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductGreySlouchTank,
-      //   price: 24,
-      //   assetAspectRatio: 222 / 329,
-      // ),
-      // Product(
-      //   category: categoryClothing,
-      //   id: 36,
-      //   isFeatured: false,
+      //   isVideo: true,
       //   name: (context) =>
       //       GalleryLocalizations.of(context)!.shrineProductSunshirtDress,
       //   price: 58,
       //   assetAspectRatio: 219 / 329,
       // ),
       // Product(
-      //   category: categoryClothing,
+      //   category: categoryFav,
+      //   id: 1771,
+      //   isFeatured: true,
+      //   isVideo: true,
+      //   name: (context) =>
+      //       GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+      //   price: 58,
+      //   assetAspectRatio: 219 / 329,
+      // ),
+      // Product(
+      //   category: categoryFav,
+      //   id: 1774,
+      //   isFeatured: false,
+      //   isVideo: true,
+      //   name: (context) =>
+      //       GalleryLocalizations.of(context)!.shrineProductSunshirtDress,
+      //   price: 58,
+      //   assetAspectRatio: 219 / 329,
+      // ),
+      // Product(
+      //   category: categoryFav,
+      //   id: 1783,
+      //   isFeatured: true,
+      //   isVideo: true,
+      //   name: (context) =>
+      //       GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+      //   price: 58,
+      //   assetAspectRatio: 219 / 329,
+      // ),
+      // Product(
+      //   category: categoryFav,
+      //   id: 1785,
+      //   isFeatured: false,
+      //   isVideo: true,
+      //   name: (context) =>
+      //       GalleryLocalizations.of(context)!.shrineProductSunshirtDress,
+      //   price: 58,
+      //   assetAspectRatio: 219 / 329,
+      // ),
+      // Product(
+      //   category: categoryFav,
+      //   id: 1796,
+      //   isFeatured: true,
+      //   isVideo: true,
+      //   name: (context) =>
+      //       GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+      //   price: 58,
+      //   assetAspectRatio: 219 / 329,
+      // ),
+      // Product(
+      //   category: categoryFav,
+      //   id: 1797,
+      //   isFeatured: false,
+      //   isVideo: true,
+      //   name: (context) =>
+      //       GalleryLocalizations.of(context)!.shrineProductSunshirtDress,
+      //   price: 58,
+      //   assetAspectRatio: 219 / 329,
+      // ),
+      // Product(
+      //   category: categoryFav,
       //   id: 37,
       //   isFeatured: true,
+      //   isVideo: true,
       //   name: (context) =>
       //       GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
       //   price: 58,
       //   assetAspectRatio: 219 / 329,
       // ),
     ];
+    allProducts.shuffle();
     if (category == categoryAll) {
       return allProducts;
     } else {

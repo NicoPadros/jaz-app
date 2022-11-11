@@ -101,6 +101,7 @@ class HomePage extends StatelessWidget {
         assetDarkColor: const Color(0xFF591946),
         textColor: cranePurple700,
         studyRoute: crane_routes.defaultRoute,
+        externalUrl: Uri.parse("https://photos.app.goo.gl/ox7SnG25AbvrwLDQ8"),
       ),
       // _CarouselCard(
       //   demo: studyDemos['fortnightly'],
@@ -1056,6 +1057,7 @@ class _CarouselCard extends StatelessWidget {
     this.assetDarkColor,
     this.textColor,
     required this.studyRoute,
+    this.externalUrl,
   });
 
   final GalleryDemo? demo;
@@ -1065,6 +1067,7 @@ class _CarouselCard extends StatelessWidget {
   final Color? assetDarkColor;
   final Color? textColor;
   final String studyRoute;
+  final Uri? externalUrl;
 
   @override
   Widget build(BuildContext context) {
@@ -1073,6 +1076,12 @@ class _CarouselCard extends StatelessWidget {
     final asset = isDark ? assetDark : this.asset;
     final assetColor = isDark ? assetDarkColor : this.assetColor;
     final textColor = isDark ? Colors.white.withOpacity(0.87) : this.textColor;
+
+    _navigate() {
+      Navigator.of(context)
+          .popUntil((route) => route.settings.name == '/');
+      Navigator.of(context).restorablePushNamed(studyRoute);
+    }
 
     return Container(
       height: 300,
@@ -1086,9 +1095,7 @@ class _CarouselCard extends StatelessWidget {
         clipBehavior: Clip.antiAlias,
         child: InkWell(
           onTap: () {
-            Navigator.of(context)
-                .popUntil((route) => route.settings.name == '/');
-            Navigator.of(context).restorablePushNamed(studyRoute);
+            externalUrl != null ? launchUrl(externalUrl!) : _navigate();
           },
           child: Stack(
             fit: StackFit.loose,

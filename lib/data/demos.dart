@@ -146,7 +146,7 @@ class Demos {
       ),
       'merienda_tracker': GalleryDemo(
         title: 'Merienda Tracker',
-        subtitle: 'Map to search places for Meriendas',
+        subtitle: 'Lugares Favoritos',
         category: GalleryDemoCategory.study,
         studyId: 'places_tracker',
       ),
@@ -157,8 +157,8 @@ class Demos {
         studyId: 'rally',
       ),
       'crane': GalleryDemo(
-        title: 'Crane',
-        subtitle: localizations.craneDescription,
+        title: 'Bonus Track',
+        subtitle: 'Perlitas',
         category: GalleryDemoCategory.study,
         studyId: 'crane',
       ),

@@ -275,11 +275,30 @@ flutter:
     - lib/studies/shrine/assets/IMG_1540.JPG
     - lib/studies/shrine/assets/IMG_7652.JPG
     - lib/studies/shrine/assets/IMG_7666.JPG
+    - lib/studies/shrine/assets/IMG_1728.JPG
+    - lib/studies/shrine/assets/IMG_1730.JPG
+    - lib/studies/shrine/assets/IMG_1730.MP4
+    - lib/studies/shrine/assets/IMG_1732.JPG
+    - lib/studies/shrine/assets/IMG_1733.JPG
+    - lib/studies/shrine/assets/IMG_1734.JPG
+    - lib/studies/shrine/assets/IMG_1771.JPG
+    - lib/studies/shrine/assets/IMG_1771.MP4
+    - lib/studies/shrine/assets/IMG_1774.JPG
+    - lib/studies/shrine/assets/IMG_1774.MP4
+    - lib/studies/shrine/assets/IMG_1777.JPG
+    - lib/studies/shrine/assets/IMG_1783.JPG
+    - lib/studies/shrine/assets/IMG_1783.MP4
+    - lib/studies/shrine/assets/IMG_1784.JPG
+    - lib/studies/shrine/assets/IMG_1785.JPG
+    - lib/studies/shrine/assets/IMG_1785.MP4
+    - lib/studies/shrine/assets/IMG_1796.JPG
+    - lib/studies/shrine/assets/IMG_1796.MP4
+    - lib/studies/shrine/assets/IMG_1797.JPG
+    - lib/studies/shrine/assets/IMG_1797.MP4
     - lib/studies/merienda_tracker/assets/heart.png
     - lib/studies/merienda_tracker/assets/visited.png
     - lib/studies/merienda_tracker/assets/2.0x/heart.png
     - lib/studies/merienda_tracker/assets/2.0x/visited.png
-
   generate: true
   uses-material-design: true
   fonts:
