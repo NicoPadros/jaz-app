@@ -337,16 +337,16 @@ class _BackdropState extends State<Backdrop>
         backTitle: widget.backTitle,
       ),
       actions: [
-        IconButton(
-          icon: const Icon(Icons.search),
-          tooltip: GalleryLocalizations.of(context)!.shrineTooltipSearch,
-          onPressed: () {},
-        ),
-        IconButton(
-          icon: const Icon(Icons.tune),
-          tooltip: GalleryLocalizations.of(context)!.shrineTooltipSettings,
-          onPressed: () {},
-        ),
+        // IconButton(
+        //   icon: const Icon(Icons.search),
+        //   tooltip: GalleryLocalizations.of(context)!.shrineTooltipSearch,
+        //   onPressed: () {},
+        // ),
+        // IconButton(
+        //   icon: const Icon(Icons.tune),
+        //   tooltip: GalleryLocalizations.of(context)!.shrineTooltipSettings,
+        //   onPressed: () {},
+        // ),
       ],
     );
     return AnimatedBuilder(

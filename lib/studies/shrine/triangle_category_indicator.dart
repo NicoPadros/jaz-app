@@ -37,7 +37,7 @@ class TriangleCategoryIndicator extends CustomPainter {
         })),
         true,
       );
-    final myPaint = Paint()..color = shrinePink400;
+    final myPaint = Paint()..color = Colors.white;
     canvas.drawPath(myPath, myPaint);
   }
 

@@ -16,7 +16,7 @@ class TwoProductCardColumn extends StatelessWidget {
   });
 
   static const double spacerHeight = 44;
-  static const double horizontalPadding = 28;
+  static const double horizontalPadding = 14;
 
   final Product bottom;
   final Product? top;
@@ -72,7 +72,7 @@ class OneProductCardColumn extends StatelessWidget {
       reverse: reverse,
       children: [
         const SizedBox(
-          height: 40,
+          height: 100,
         ),
         MobileProductCard(
           product: product,

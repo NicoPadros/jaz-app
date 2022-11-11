@@ -140,7 +140,7 @@ class CategoryMenuPage extends StatelessWidget {
                       child: GestureDetector(
                         onTap: () {
                           Navigator.of(context)
-                              .restorablePushNamed(ShrineApp.loginRoute);
+                              .restorablePushNamed(ShrineApp.homeRoute);
                         },
                         child: _buttonText(
                           GalleryLocalizations.of(context)!
@@ -193,13 +193,8 @@ class CategoryMenuPage extends StatelessWidget {
                               onCategoryTap!();
                             }
                             Navigator.of(context)
-                                .restorablePushNamed(ShrineApp.loginRoute);
+                                .restorablePushNamed(ShrineApp.homeRoute);
                           },
-                          child: _buttonText(
-                            GalleryLocalizations.of(context)!
-                                .shrineLogoutButtonCaption,
-                            logoutTextStyle,
-                          ),
                         ),
                       ),
                     ),

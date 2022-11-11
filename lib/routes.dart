@@ -13,6 +13,7 @@ import 'package:gallery/studies/crane/app.dart' deferred as crane;
 import 'package:gallery/studies/crane/routes.dart' as crane_routes;
 import 'package:gallery/studies/fortnightly/app.dart' deferred as fortnightly;
 import 'package:gallery/studies/fortnightly/routes.dart' as fortnightly_routes;
+import 'package:gallery/studies/merienda_tracker/app.dart';
 import 'package:gallery/studies/rally/app.dart' deferred as rally;
 import 'package:gallery/studies/rally/routes.dart' as rally_routes;
 import 'package:gallery/studies/reply/app.dart' as reply;
@@ -21,6 +22,9 @@ import 'package:gallery/studies/shrine/app.dart' deferred as shrine;
 import 'package:gallery/studies/shrine/routes.dart' as shrine_routes;
 import 'package:gallery/studies/starter/app.dart' as starter_app;
 import 'package:gallery/studies/starter/routes.dart' as starter_app_routes;
+import 'package:gallery/studies/merienda_tracker/app.dart' deferred as merienda_app;
+import 'package:gallery/studies/merienda_tracker/routes.dart' as merienda_routes;
+import 'package:provider/provider.dart';
 
 typedef PathWidgetBuilder = Widget Function(BuildContext, String?);
 
@@ -58,14 +62,14 @@ class RouteConfiguration {
       (context, match) => DemoPage(slug: match),
       openInSecondScreen: false,
     ),
-    Path(
-      r'^' + rally_routes.homeRoute,
-      (context, match) => StudyWrapper(
-        study: DeferredWidget(rally.loadLibrary,
-            () => rally.RallyApp()), // ignore: prefer_const_constructors
-      ),
-      openInSecondScreen: true,
-    ),
+    // Path(
+    //   r'^' + rally_routes.homeRoute,
+    //   (context, match) => StudyWrapper(
+    //     study: DeferredWidget(rally.loadLibrary,
+    //         () => rally.RallyApp()), // ignore: prefer_const_constructors
+    //   ),
+    //   openInSecondScreen: true,
+    // ),
     Path(
       r'^' + shrine_routes.homeRoute,
       (context, match) => StudyWrapper(
@@ -75,38 +79,41 @@ class RouteConfiguration {
       openInSecondScreen: true,
     ),
     Path(
-      r'^' + crane_routes.defaultRoute,
+      r'^' + merienda_routes.homeRoute,
       (context, match) => StudyWrapper(
-        study: DeferredWidget(crane.loadLibrary,
-            () => crane.CraneApp(), // ignore: prefer_const_constructors
-            placeholder: const DeferredLoadingPlaceholder(name: 'Crane')),
+        study: DeferredWidget(merienda_app.loadLibrary,
+            () => ChangeNotifierProvider(
+              create: (context) => AppState(),
+              child: const PlaceTrackerApp(),
+            ), // ignore: prefer_const_constructors
+            placeholder: const DeferredLoadingPlaceholder(name: 'Merienda Tracker')),
       ),
       openInSecondScreen: true,
     ),
-    Path(
-      r'^' + fortnightly_routes.defaultRoute,
-      (context, match) => StudyWrapper(
-        study: DeferredWidget(
-            fortnightly.loadLibrary,
-            // ignore: prefer_const_constructors
-            () => fortnightly.FortnightlyApp()),
-      ),
-      openInSecondScreen: true,
-    ),
-    Path(
-      r'^' + reply_routes.homeRoute,
-      // ignore: prefer_const_constructors
-      (context, match) =>
-          const StudyWrapper(study: reply.ReplyApp(), hasBottomNavBar: true),
-      openInSecondScreen: true,
-    ),
-    Path(
-      r'^' + starter_app_routes.defaultRoute,
-      (context, match) => const StudyWrapper(
-        study: starter_app.StarterApp(),
-      ),
-      openInSecondScreen: true,
-    ),
+    // Path(
+    //   r'^' + fortnightly_routes.defaultRoute,
+    //   (context, match) => StudyWrapper(
+    //     study: DeferredWidget(
+    //         fortnightly.loadLibrary,
+    //         // ignore: prefer_const_constructors
+    //         () => fortnightly.FortnightlyApp()),
+    //   ),
+    //   openInSecondScreen: true,
+    // ),
+    // Path(
+    //   r'^' + reply_routes.homeRoute,
+    //   // ignore: prefer_const_constructors
+    //   (context, match) =>
+    //       const StudyWrapper(study: reply.ReplyApp(), hasBottomNavBar: true),
+    //   openInSecondScreen: true,
+    // ),
+    // Path(
+    //   r'^' + starter_app_routes.defaultRoute,
+    //   (context, match) => const StudyWrapper(
+    //     study: starter_app.StarterApp(),
+    //   ),
+    //   openInSecondScreen: true,
+    // ),
     Path(
       r'^/',
       (context, match) => const RootPage(),

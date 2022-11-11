@@ -219,11 +219,11 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
               ),
             ),
           ],
-          _SettingsIcon(
-            animationController: _iconController,
-            toggleSettings: _toggleSettings,
-            isSettingsOpenNotifier: _isSettingsOpenNotifier,
-          ),
+          // _SettingsIcon(
+          //   animationController: _iconController,
+          //   toggleSettings: _toggleSettings,
+          //   isSettingsOpenNotifier: _isSettingsOpenNotifier,
+          // ),
         ],
       ),
     );

@@ -17,28 +17,38 @@ class Category {
 }
 
 Category categoryAll = Category(
-  name: (context) => GalleryLocalizations.of(context)!.shrineCategoryNameAll,
+  name: (context) => 'Todas',
 );
 
-Category categoryAccessories = Category(
+Category categoryTigre = Category(
   name: (context) =>
-      GalleryLocalizations.of(context)!.shrineCategoryNameAccessories,
+      'Tigre',
 );
 
-Category categoryClothing = Category(
+Category categoryCar = Category(
   name: (context) =>
-      GalleryLocalizations.of(context)!.shrineCategoryNameClothing,
+      'En el auto (siempre)',
 );
 
-Category categoryHome = Category(
-  name: (context) => GalleryLocalizations.of(context)!.shrineCategoryNameHome,
+Category categoryOther = Category(
+  name: (context) => 'Popurrí',
+);
+
+Category categoryColonia = Category(
+  name: (context) => 'Colonia',
+);
+
+Category categoryFav = Category(
+  name: (context) => 'Mis Favoritas',
 );
 
 List<Category> categories = [
   categoryAll,
-  categoryAccessories,
-  categoryClothing,
-  categoryHome,
+  categoryTigre,
+  categoryCar,
+  categoryOther,
+  categoryColonia,
+  categoryFav
 ];
 
 class Product {
@@ -62,7 +72,7 @@ class Product {
 
   final int price;
 
-  String get assetName => '$id-0.jpg';
+  String get assetName => 'IMG_$id.JPG';
 
-  String get assetPackage => 'shrine_images';
+  String get assetPath => 'assets/';
 }

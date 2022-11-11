@@ -1,0 +1,153 @@
+// Copyright 2020 The Flutter team. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+
+import 'place.dart';
+
+class StubData {
+  static const List<Place> places = [
+    Place(
+      id: '1',
+      latLng: LatLng(-34.612322243547254, -58.36356113068661),
+      name: 'Ciro Gelato',
+      description:
+          'Linda vista, muchos combos para elegir, se llena. Pierina Dealessi 1350 Dique 2, C1107 CABA',
+      category: PlaceCategory.wantToGo,
+      starRating: 4,
+    ),
+    Place(
+      id: '2',
+      latLng: LatLng(-34.513377363358806, -58.92411929259689),
+      name: 'Pilar Patagonia',
+      description:
+          'Club de campo para pasar el día',
+      category: PlaceCategory.wantToGo,
+      starRating: 3,
+    ),
+    Place(
+      id: '3',
+      latLng: LatLng(-34.16566770467778, -58.958425988243135),
+      name: 'Pecas Burger',
+      description:
+          'Mejor hamburguesería que Mi Barrio',
+      category: PlaceCategory.wantToGo,
+      starRating: 5,
+    ),
+    Place(
+      id: '4',
+      latLng: LatLng(-34.59692093613734, -58.36360621164175),
+      name: 'Sunset en Puerto Madero',
+      description:
+          'Bar en barco',
+      category: PlaceCategory.wantToGo,
+      starRating: 4,
+    ),
+    Place(
+      id: '5',
+      latLng: LatLng(-34.58078423795516, -58.439660915343296),
+      name: 'Emperador Meiji',
+      description:
+          'EXÓTICO plan: Comida japonesa (no tiene que ser sushi)',
+      category: PlaceCategory.wantToGo,
+      starRating: 4,
+    ),
+    Place(
+      id: '6',
+      latLng: LatLng(-34.60178078698865, -58.37733977671651),
+      name: 'Café Le Caravelle',
+      description:
+          'Supuestamente el mejor capuccino de BsAs',
+      category: PlaceCategory.wantToGo,
+      starRating: 3,
+    ),
+    Place(
+      id: '7',
+      latLng: LatLng(-34.50575454000603, -58.477069183636154),
+      name: 'Club de Pescadores',
+      description:
+          'Lugar con muy linda vista. Se come rico. La comida ni idea',
+      category: PlaceCategory.favorite,
+      starRating: 5,
+    ),
+    Place(
+      id: '8',
+      latLng: LatLng(-34.48387482399786, -58.48860101080579),
+      name: "P.F. Chang's",
+      description:
+          'Lugar #1',
+      category: PlaceCategory.favorite,
+      starRating: 5,
+    ),
+    Place(
+      id: '9',
+      latLng: LatLng(-34.588756803779816, -58.44519192328349),
+      name: 'Anchoita',
+      description:
+          'Restaurant muy conocido',
+      category: PlaceCategory.wantToGo,
+      starRating: 4,
+    ),
+    Place(
+      id: '10',
+      latLng: LatLng(-34.38259557389982, -58.703564108416494),
+      name: 'Como Siempre',
+      description:
+          'Restaurant con vista al lago. OJO CON EL SOL',
+      category: PlaceCategory.visited,
+      starRating: 4,
+    ),
+    Place(
+      id: '11',
+      latLng: LatLng(-34.46541221723682, -57.83496868185206),
+      name: 'Colonia del Sacramento',
+      description:
+          'Ciudad colonial pintoresca. Muy buenos medios de transporte y muy tranquila. (shopping recomendado)',
+      category: PlaceCategory.favorite,
+      starRating: 5,
+    ),
+    Place(
+      id: '12',
+      latLng: LatLng(-34.435097604729506, -58.82903790794018),
+      name: 'Trufa',
+      description:
+          'Restaurante/rooftop. Comida muy buena',
+      category: PlaceCategory.wantToGo,
+      starRating: 4,
+    ),
+    Place(
+      id: '13',
+      latLng: LatLng(-34.44197906635252, -58.75497107112875),
+      name: 'Defain',
+      description:
+          'Terribles medialunas. Ah el super-chocolate también pero es para compartir',
+      category: PlaceCategory.visited,
+      starRating: 4,
+    ),
+    Place(
+      id: '14',
+      latLng: LatLng(-34.44189426339895, -58.86438645570029),
+      name: 'Rush',
+      description:
+          'Ropa cómoda y ponerse desodorante/antitranspirante. Recomendado acompañarlo de Banchero. Ojo con los nenes chiquitos',
+      category: PlaceCategory.favorite,
+      starRating: 5,
+    ),
+    Place(
+      id: '15',
+      latLng: LatLng(-34.44340950562042, -58.8613672170735),
+      name: 'Barbas NY Pilar',
+      description:
+          'Recomendable la Classic Burger. Cuidado con el estacionamiento (por inseguridad)',
+      category: PlaceCategory.visited,
+      starRating: 5,
+    ),
+  ];
+
+  static const reviewStrings = [
+    'My favorite place in Portland. The employees are wonderful and so is the food. I go here at least once a month!',
+    'Staff was very friendly. Great atmosphere and good music. Would recommend.',
+    'Best. Place. In. Town. Period.'
+  ];
+}

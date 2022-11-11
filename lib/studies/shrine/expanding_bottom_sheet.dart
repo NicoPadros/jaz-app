@@ -375,7 +375,8 @@ class ExpandingBottomSheetState extends State<ExpandingBottomSheet> {
         : const EdgeInsets.only(top: 16, bottom: 24);
   }
 
-  bool get _cartIsVisible => _thumbnailOpacityAnimation.value == 0;
+  bool get _cartIsVisible => false;
+  // bool get _cartIsVisible => _thumbnailOpacityAnimation.value == 0;
 
   // We take 16 pts off of the bottom padding to ensure the collapsed shopping
   // cart is not too tall.
@@ -394,7 +395,7 @@ class ExpandingBottomSheetState extends State<ExpandingBottomSheet> {
           AnimatedPadding(
             padding: _verticalCartPaddingFor(numProducts),
             duration: const Duration(milliseconds: 225),
-            child: const Icon(Icons.shopping_cart),
+            // child: const Icon(Icons.shopping_cart),
           ),
           SizedBox(
             width: _width,
@@ -410,11 +411,11 @@ class ExpandingBottomSheetState extends State<ExpandingBottomSheet> {
         children: [
           Row(
             children: [
-              AnimatedPadding(
-                padding: _horizontalCartPaddingFor(numProducts),
-                duration: const Duration(milliseconds: 225),
-                child: const Icon(Icons.shopping_cart),
-              ),
+              // AnimatedPadding(
+              //   padding: _horizontalCartPaddingFor(numProducts),
+              //   duration: const Duration(milliseconds: 225),
+              //   child: const Icon(Icons.shopping_cart),
+              // ),
               Container(
                 // Accounts for the overflow number
                 width: min(numProducts, _maxThumbnailCount) *
@@ -442,7 +443,7 @@ class ExpandingBottomSheetState extends State<ExpandingBottomSheet> {
   Widget _buildShoppingCartPage() {
     return Opacity(
       opacity: _cartOpacityAnimation.value,
-      child: const ShoppingCartPage(),
+      // child: const ShoppingCartPage(),
     );
   }
 
@@ -491,9 +492,7 @@ class ExpandingBottomSheetState extends State<ExpandingBottomSheet> {
         ),
         elevation: 4,
         color: shrinePink50,
-        child: _cartIsVisible
-            ? _buildShoppingCartPage()
-            : _buildThumbnails(context, numProducts),
+        child: _buildThumbnails(context, numProducts),
       ),
     );
 
@@ -552,16 +551,15 @@ class ExpandingBottomSheetState extends State<ExpandingBottomSheet> {
       duration: const Duration(milliseconds: 225),
       curve: Curves.easeInOut,
       alignment: AlignmentDirectional.topStart,
-      child: AnimatedBuilder(
-        animation: widget.hideController,
-        builder: (context, child) => AnimatedBuilder(
-          animation: widget.expandingController,
-          builder: (context, child) => ScopedModelDescendant<AppStateModel>(
-            builder: (context, child, model) =>
-                _buildSlideAnimation(context, _buildCart(context)),
-          ),
-        ),
-      ),
+      // child: AnimatedBuilder(
+      //   animation: widget.hideController,
+        // builder: (context, child) => AnimatedBuilder(
+        //   animation: widget.expandingController,
+          // builder: (context, child) => ScopedModelDescendant<AppStateModel>(
+          //   builder: (context, child, model) => _buildSlideAnimation(context, _buildCart(context)),
+          // ),
+        // ),
+      // ),
     );
   }
 }
@@ -750,7 +748,7 @@ class ProductThumbnail extends StatelessWidget {
             image: DecorationImage(
               image: ExactAssetImage(
                 product.assetName, // asset name
-                package: product.assetPackage, // asset package
+                package: product.assetPath, // asset package
               ),
               fit: BoxFit.cover,
             ),

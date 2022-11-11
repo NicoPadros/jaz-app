@@ -14,14 +14,14 @@ import 'package:scoped_model/scoped_model.dart';
 class MobileProductCard extends StatelessWidget {
   const MobileProductCard({
     super.key,
-    this.imageAspectRatio = 33 / 49,
+    this.imageAspectRatio = 2316 / 3088,
     required this.product,
   }) : assert(imageAspectRatio > 0);
 
   final double imageAspectRatio;
   final Product product;
 
-  static const double defaultTextBoxHeight = 65;
+  static const double defaultTextBoxHeight = 40;
 
   @override
   Widget build(BuildContext context) {
@@ -77,7 +77,7 @@ Widget _buildProductCard({
   );
   final theme = Theme.of(context);
   final imageWidget = FadeInImagePlaceholder(
-    image: AssetImage(product.assetName, package: product.assetPackage),
+    image: AssetImage('lib/studies/shrine/assets/${product.assetName}'),
     placeholder: Container(
       color: Colors.black.withOpacity(0.1),
       width: imageWidth,
@@ -121,31 +121,31 @@ Widget _buildProductCard({
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  const SizedBox(height: 23),
-                  SizedBox(
-                    width: imageWidth,
-                    child: Text(
-                      product.name(context),
-                      style: theme.textTheme.labelLarge,
-                      softWrap: true,
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    formatter.format(product.price),
-                    style: theme.textTheme.bodySmall,
-                  ),
-                ],
+                // children: [
+                  // const SizedBox(height: 23),
+                  // SizedBox(
+                  //   width: imageWidth,
+                  //   child: Text(
+                  //     product.name(context),
+                  //     style: theme.textTheme.labelLarge,
+                  //     softWrap: true,
+                  //     textAlign: TextAlign.center,
+                  //   ),
+                  // ),
+                  // const SizedBox(height: 4),
+                  // Text(
+                  //   formatter.format(product.price),
+                  //   style: theme.textTheme.bodySmall,
+                  // ),
+                // ],
               ),
             ),
           ],
         ),
-        const Padding(
-          padding: EdgeInsets.all(16),
-          child: Icon(Icons.add_shopping_cart),
-        ),
+        // const Padding(
+        //   padding: EdgeInsets.all(16),
+        //   child: Icon(Icons.add_shopping_cart),
+        // ),
       ],
     ),
   );

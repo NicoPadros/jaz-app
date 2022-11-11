@@ -32,6 +32,10 @@ dependencies:
   shrine_images: ^2.0.1
   url_launcher: ^6.1.2
   vector_math: ^2.1.2
+  google_maps_flutter: ^2.0.6
+  google_maps_flutter_web: ">=0.3.0+1 <0.5.0"
+  uuid: ^3.0.4
+
 
 dev_dependencies:
   flutter_test:
@@ -247,6 +251,34 @@ flutter:
     - packages/shrine_images/35-0.jpg
     - packages/shrine_images/36-0.jpg
     - packages/shrine_images/37-0.jpg
+    - lib/studies/shrine/assets/IMG_1187.JPG
+    - lib/studies/shrine/assets/IMG_1188.JPG
+    - lib/studies/shrine/assets/IMG_1189.JPG
+    - lib/studies/shrine/assets/IMG_1192.JPG
+    - lib/studies/shrine/assets/IMG_1238.JPG
+    - lib/studies/shrine/assets/IMG_1240.JPG
+    - lib/studies/shrine/assets/IMG_1285.JPG
+    - lib/studies/shrine/assets/IMG_1291.JPG
+    - lib/studies/shrine/assets/IMG_1292.JPG
+    - lib/studies/shrine/assets/IMG_1299.JPG
+    - lib/studies/shrine/assets/IMG_1301.JPG
+    - lib/studies/shrine/assets/IMG_1306.JPG
+    - lib/studies/shrine/assets/IMG_1309.JPG
+    - lib/studies/shrine/assets/IMG_1315.JPG
+    - lib/studies/shrine/assets/IMG_1486.JPG
+    - lib/studies/shrine/assets/IMG_1495.JPG
+    - lib/studies/shrine/assets/IMG_1497.JPG
+    - lib/studies/shrine/assets/IMG_1498.JPG
+    - lib/studies/shrine/assets/IMG_1499.JPG
+    - lib/studies/shrine/assets/IMG_1506.JPG
+    - lib/studies/shrine/assets/IMG_1515.JPG
+    - lib/studies/shrine/assets/IMG_1540.JPG
+    - lib/studies/shrine/assets/IMG_7652.JPG
+    - lib/studies/shrine/assets/IMG_7666.JPG
+    - lib/studies/merienda_tracker/assets/heart.png
+    - lib/studies/merienda_tracker/assets/visited.png
+    - lib/studies/merienda_tracker/assets/2.0x/heart.png
+    - lib/studies/merienda_tracker/assets/2.0x/visited.png
 
   generate: true
   uses-material-design: true

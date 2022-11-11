@@ -18,13 +18,10 @@ import 'package:gallery/pages/settings.dart';
 import 'package:gallery/pages/splash.dart';
 import 'package:gallery/studies/crane/colors.dart';
 import 'package:gallery/studies/crane/routes.dart' as crane_routes;
-import 'package:gallery/studies/fortnightly/routes.dart' as fortnightly_routes;
+import 'package:gallery/studies/merienda_tracker/routes.dart' as merienda_routes;
 import 'package:gallery/studies/rally/colors.dart';
-import 'package:gallery/studies/rally/routes.dart' as rally_routes;
-import 'package:gallery/studies/reply/routes.dart' as reply_routes;
 import 'package:gallery/studies/shrine/colors.dart';
 import 'package:gallery/studies/shrine/routes.dart' as shrine_routes;
-import 'package:gallery/studies/starter/routes.dart' as starter_app_routes;
 import 'package:url_launcher/url_launcher.dart';
 
 const _horizontalPadding = 32.0;
@@ -45,21 +42,21 @@ class HomePage extends StatelessWidget {
     final localizations = GalleryLocalizations.of(context)!;
     final studyDemos = Demos.studies(localizations);
     final carouselCards = <Widget>[
-      _CarouselCard(
-        demo: studyDemos['reply'],
-        asset: const AssetImage(
-          'assets/studies/reply_card.png',
-          package: 'flutter_gallery_assets',
-        ),
-        assetColor: const Color(0xFF344955),
-        assetDark: const AssetImage(
-          'assets/studies/reply_card_dark.png',
-          package: 'flutter_gallery_assets',
-        ),
-        assetDarkColor: const Color(0xFF1D2327),
-        textColor: Colors.white,
-        studyRoute: reply_routes.homeRoute,
-      ),
+      // _CarouselCard(
+      //   demo: studyDemos['reply'],
+      //   asset: const AssetImage(
+      //     'assets/studies/reply_card.png',
+      //     package: 'flutter_gallery_assets',
+      //   ),
+      //   assetColor: const Color(0xFF344955),
+      //   assetDark: const AssetImage(
+      //     'assets/studies/reply_card_dark.png',
+      //     package: 'flutter_gallery_assets',
+      //   ),
+      //   assetDarkColor: const Color(0xFF1D2327),
+      //   textColor: Colors.white,
+      //   studyRoute: reply_routes.homeRoute,
+      // ),
       _CarouselCard(
         demo: studyDemos['shrine'],
         asset: const AssetImage(
@@ -73,10 +70,10 @@ class HomePage extends StatelessWidget {
         ),
         assetDarkColor: const Color(0xFF543B3C),
         textColor: shrineBrown900,
-        studyRoute: shrine_routes.loginRoute,
+        studyRoute: shrine_routes.homeRoute,
       ),
       _CarouselCard(
-        demo: studyDemos['rally'],
+        demo: studyDemos['merienda_tracker'],
         textColor: RallyColors.accountColors[0],
         asset: const AssetImage(
           'assets/studies/rally_card.png',
@@ -88,7 +85,7 @@ class HomePage extends StatelessWidget {
           package: 'flutter_gallery_assets',
         ),
         assetDarkColor: const Color(0xFF253538),
-        studyRoute: rally_routes.loginRoute,
+        studyRoute: merienda_routes.homeRoute,
       ),
       _CarouselCard(
         demo: studyDemos['crane'],
@@ -105,35 +102,35 @@ class HomePage extends StatelessWidget {
         textColor: cranePurple700,
         studyRoute: crane_routes.defaultRoute,
       ),
-      _CarouselCard(
-        demo: studyDemos['fortnightly'],
-        asset: const AssetImage(
-          'assets/studies/fortnightly_card.png',
-          package: 'flutter_gallery_assets',
-        ),
-        assetColor: Colors.white,
-        assetDark: const AssetImage(
-          'assets/studies/fortnightly_card_dark.png',
-          package: 'flutter_gallery_assets',
-        ),
-        assetDarkColor: const Color(0xFF1F1F1F),
-        studyRoute: fortnightly_routes.defaultRoute,
-      ),
-      _CarouselCard(
-        demo: studyDemos['starterApp'],
-        asset: const AssetImage(
-          'assets/studies/starter_card.png',
-          package: 'flutter_gallery_assets',
-        ),
-        assetColor: const Color(0xFFFAF6FE),
-        assetDark: const AssetImage(
-          'assets/studies/starter_card_dark.png',
-          package: 'flutter_gallery_assets',
-        ),
-        assetDarkColor: const Color(0xFF3F3D45),
-        textColor: Colors.black,
-        studyRoute: starter_app_routes.defaultRoute,
-      ),
+      // _CarouselCard(
+      //   demo: studyDemos['fortnightly'],
+      //   asset: const AssetImage(
+      //     'assets/studies/fortnightly_card.png',
+      //     package: 'flutter_gallery_assets',
+      //   ),
+      //   assetColor: Colors.white,
+      //   assetDark: const AssetImage(
+      //     'assets/studies/fortnightly_card_dark.png',
+      //     package: 'flutter_gallery_assets',
+      //   ),
+      //   assetDarkColor: const Color(0xFF1F1F1F),
+      //   studyRoute: fortnightly_routes.defaultRoute,
+      // ),
+      // _CarouselCard(
+      //   demo: studyDemos['starterApp'],
+      //   asset: const AssetImage(
+      //     'assets/studies/starter_card.png',
+      //     package: 'flutter_gallery_assets',
+      //   ),
+      //   assetColor: const Color(0xFFFAF6FE),
+      //   assetDark: const AssetImage(
+      //     'assets/studies/starter_card_dark.png',
+      //     package: 'flutter_gallery_assets',
+      //   ),
+      //   assetDarkColor: const Color(0xFF3F3D45),
+      //   textColor: Colors.black,
+      //   studyRoute: starter_app_routes.defaultRoute,
+      // ),
     ];
 
     if (isDesktop) {
@@ -240,6 +237,7 @@ class HomePage extends StatelessWidget {
               SplashPageAnimation.of(context)!.isFinished,
           carouselCards: carouselCards,
         ),
+        extendBody: true,
       );
     }
   }
@@ -378,80 +376,83 @@ class _AnimatedHomePageState extends State<_AnimatedHomePage>
   Widget build(BuildContext context) {
     final localizations = GalleryLocalizations.of(context)!;
     final isTestMode = GalleryOptions.of(context).isTestMode;
-    return Stack(
-      children: [
-        ListView(
-          // Makes integration tests possible.
-          key: const ValueKey('HomeListView'),
-          restorationId: 'home_list_view',
-          children: [
-            const SizedBox(height: 8),
+    var listChildren = [
+      const SizedBox(height: 8),
             Container(
               margin:
                   const EdgeInsets.symmetric(horizontal: _horizontalPadding),
               child: _GalleryHeader(),
             ),
-            _Carousel(
-              animationController: _animationController,
-              restorationId: 'home_carousel',
-              children: widget.carouselCards,
-            ),
-            Container(
-              margin:
-                  const EdgeInsets.symmetric(horizontal: _horizontalPadding),
-              child: _CategoriesHeader(),
-            ),
-            _AnimatedCategoryItem(
-              startDelayFraction: 0.00,
-              controller: _animationController,
-              child: CategoryListItem(
-                  key: const PageStorageKey<GalleryDemoCategory>(
-                    GalleryDemoCategory.material,
-                  ),
-                  restorationId: 'home_material_category_list',
-                  category: GalleryDemoCategory.material,
-                  imageString: 'assets/icons/material/material.png',
-                  demos: Demos.materialDemos(localizations),
-                  initiallyExpanded:
-                      _isMaterialListExpanded.value || isTestMode,
-                  onTap: (shouldOpenList) {
-                    _isMaterialListExpanded.value = shouldOpenList;
-                  }),
-            ),
-            _AnimatedCategoryItem(
-              startDelayFraction: 0.05,
-              controller: _animationController,
-              child: CategoryListItem(
-                  key: const PageStorageKey<GalleryDemoCategory>(
-                    GalleryDemoCategory.cupertino,
-                  ),
-                  restorationId: 'home_cupertino_category_list',
-                  category: GalleryDemoCategory.cupertino,
-                  imageString: 'assets/icons/cupertino/cupertino.png',
-                  demos: Demos.cupertinoDemos(localizations),
-                  initiallyExpanded:
-                      _isCupertinoListExpanded.value || isTestMode,
-                  onTap: (shouldOpenList) {
-                    _isCupertinoListExpanded.value = shouldOpenList;
-                  }),
-            ),
-            _AnimatedCategoryItem(
-              startDelayFraction: 0.10,
-              controller: _animationController,
-              child: CategoryListItem(
-                  key: const PageStorageKey<GalleryDemoCategory>(
-                    GalleryDemoCategory.other,
-                  ),
-                  restorationId: 'home_other_category_list',
-                  category: GalleryDemoCategory.other,
-                  imageString: 'assets/icons/reference/reference.png',
-                  demos: Demos.otherDemos(localizations),
-                  initiallyExpanded: _isOtherListExpanded.value || isTestMode,
-                  onTap: (shouldOpenList) {
-                    _isOtherListExpanded.value = shouldOpenList;
-                  }),
-            ),
-          ],
+            // _Carousel(
+            //   animationController: _animationController,
+            //   restorationId: 'home_carousel',
+            //   children: widget.carouselCards,
+            // ),
+            // Container(
+            //   margin:
+            //       const EdgeInsets.symmetric(horizontal: _horizontalPadding),
+              // child: _CategoriesHeader(),
+            // ),
+            // _AnimatedCategoryItem(
+            //   startDelayFraction: 0.00,
+            //   controller: _animationController,
+            //   child: CategoryListItem(
+            //       key: const PageStorageKey<GalleryDemoCategory>(
+            //         GalleryDemoCategory.material,
+            //       ),
+            //       restorationId: 'home_material_category_list',
+            //       category: GalleryDemoCategory.material,
+            //       imageString: 'assets/icons/material/material.png',
+            //       demos: Demos.materialDemos(localizations),
+            //       initiallyExpanded:
+            //           _isMaterialListExpanded.value || isTestMode,
+            //       onTap: (shouldOpenList) {
+            //         _isMaterialListExpanded.value = shouldOpenList;
+            //       }),
+            // ),
+            // _AnimatedCategoryItem(
+            //   startDelayFraction: 0.05,
+            //   controller: _animationController,
+            //   child: CategoryListItem(
+            //       key: const PageStorageKey<GalleryDemoCategory>(
+            //         GalleryDemoCategory.cupertino,
+            //       ),
+            //       restorationId: 'home_cupertino_category_list',
+            //       category: GalleryDemoCategory.cupertino,
+            //       imageString: 'assets/icons/cupertino/cupertino.png',
+            //       demos: Demos.cupertinoDemos(localizations),
+            //       initiallyExpanded:
+            //           _isCupertinoListExpanded.value || isTestMode,
+            //       onTap: (shouldOpenList) {
+            //         _isCupertinoListExpanded.value = shouldOpenList;
+            //       }),
+            // ),
+            // _AnimatedCategoryItem(
+            //   startDelayFraction: 0.10,
+            //   controller: _animationController,
+            //   child: CategoryListItem(
+            //       key: const PageStorageKey<GalleryDemoCategory>(
+            //         GalleryDemoCategory.other,
+            //       ),
+            //       restorationId: 'home_other_category_list',
+            //       category: GalleryDemoCategory.other,
+            //       imageString: 'assets/icons/reference/reference.png',
+            //       demos: Demos.otherDemos(localizations),
+            //       initiallyExpanded: _isOtherListExpanded.value || isTestMode,
+            //       onTap: (shouldOpenList) {
+            //         _isOtherListExpanded.value = shouldOpenList;
+            //       }),
+            // ),
+          ];
+    listChildren.addAll(widget.carouselCards);
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        ListView(
+          // Makes integration tests possible.
+          key: const ValueKey('HomeListView'),
+          restorationId: 'home_list_view',
+          children: widget.carouselCards,
         ),
         Align(
           alignment: Alignment.topCenter,
@@ -1074,6 +1075,7 @@ class _CarouselCard extends StatelessWidget {
     final textColor = isDark ? Colors.white.withOpacity(0.87) : this.textColor;
 
     return Container(
+      height: 300,
       // Makes integration tests possible.
       key: ValueKey(demo!.describe),
       margin:
@@ -1089,7 +1091,7 @@ class _CarouselCard extends StatelessWidget {
             Navigator.of(context).restorablePushNamed(studyRoute);
           },
           child: Stack(
-            fit: StackFit.expand,
+            fit: StackFit.loose,
             children: [
               if (asset != null)
                 FadeInImagePlaceholder(

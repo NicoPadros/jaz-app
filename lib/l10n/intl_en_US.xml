@@ -112,7 +112,11 @@
   <string
     name="shrineDescription"
     description="Study description for Shrine."
-    >A fashionable retail app</string>
+    >Photos Gallery</string>
+  <string
+          name="placesTrackerDescription"
+          description="Study description for Merienda Tracker."
+  >Map to search places for Meriendas</string>
   <string
     name="fortnightlyDescription"
     description="Study description for Fortnightly."

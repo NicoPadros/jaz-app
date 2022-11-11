@@ -80,7 +80,7 @@ class MobileAsymmetricView extends StatelessWidget {
                 products.length - 1 >= bottom + 1 ? products[bottom + 1] : null,
             imageAspectRatio: imageWidth / imageHeight,
           );
-          width += 32;
+          width += 8;
         } else {
           /// Odd cases
           column = OneProductCardColumn(
@@ -91,7 +91,7 @@ class MobileAsymmetricView extends StatelessWidget {
         return SizedBox(
           width: width,
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 8),
             child: column,
           ),
         );

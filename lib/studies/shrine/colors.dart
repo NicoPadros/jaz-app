@@ -4,10 +4,10 @@
 
 import 'package:flutter/material.dart';
 
-const Color shrinePink50 = Color(0xFFFEEAE6);
-const Color shrinePink100 = Color(0xFFFEDBD0);
-const Color shrinePink300 = Color(0xFFFBB8AC);
-const Color shrinePink400 = Color(0xFFEAA4A4);
+const Color shrinePink50 = Color(0xFFe6ceff);
+const Color shrinePink100 = Color(0xFFb39ddb);
+const Color shrinePink300 = Color(0xFF836fa9);
+const Color shrinePink400 = Color(0xFF4d2c91);
 
 const Color shrineBrown900 = Color(0xFF442B2D);
 const Color shrineBrown600 = Color(0xFF7D4F52);

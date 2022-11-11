@@ -23,7 +23,6 @@ import 'package:scoped_model/scoped_model.dart';
 class ShrineApp extends StatefulWidget {
   const ShrineApp({super.key});
 
-  static const String loginRoute = routes.loginRoute;
   static const String homeRoute = routes.homeRoute;
 
   @override
@@ -102,7 +101,7 @@ class _ShrineAppState extends State<ShrineApp>
     return Backdrop(
       frontLayer: const ProductPage(),
       backLayer: CategoryMenuPage(onCategoryTap: () => _controller.forward()),
-      frontTitle: const Text('SHRINE'),
+      frontTitle: const Text('GALLERY'),
       backTitle: Text(GalleryLocalizations.of(context)!.shrineMenuCaption),
       controller: _controller,
     );
@@ -158,12 +157,11 @@ class _ShrineAppState extends State<ShrineApp>
           // see https://github.com/flutter/gallery/issues/541
           scrollBehavior:
               const MaterialScrollBehavior().copyWith(scrollbars: false),
-          restorationScopeId: 'shrineApp',
-          title: 'Shrine',
+          restorationScopeId: 'jazGallery',
+          title: 'Jaz Gallery',
           debugShowCheckedModeBanner: false,
-          initialRoute: ShrineApp.loginRoute,
+          initialRoute: ShrineApp.homeRoute,
           routes: {
-            ShrineApp.loginRoute: (context) => const LoginPage(),
             ShrineApp.homeRoute: (context) => home,
           },
           theme: shrineTheme.copyWith(
