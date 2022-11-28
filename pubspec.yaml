@@ -295,6 +295,26 @@ flutter:
     - lib/studies/shrine/assets/IMG_1796.MP4
     - lib/studies/shrine/assets/IMG_1797.JPG
     - lib/studies/shrine/assets/IMG_1797.MP4
+    - lib/studies/shrine/assets/IMG_112.JPG
+    - lib/studies/shrine/assets/IMG_2003.JPG
+    - lib/studies/shrine/assets/IMG_486.JPG
+    - lib/studies/shrine/assets/IMG_439.JPG
+    - lib/studies/shrine/assets/IMG_2007.JPG
+    - lib/studies/shrine/assets/IMG_2009.JPG
+    - lib/studies/shrine/assets/IMG_2014.JPG
+    - lib/studies/shrine/assets/IMG_2015.JPG
+    - lib/studies/shrine/assets/IMG_2016.JPG
+    - lib/studies/shrine/assets/IMG_2018.JPG
+    - lib/studies/shrine/assets/IMG_2019.JPG
+    - lib/studies/shrine/assets/IMG_2021.JPG
+    - lib/studies/shrine/assets/IMG_2022.JPG
+    - lib/studies/shrine/assets/IMG_2023.JPG
+    - lib/studies/shrine/assets/IMG_2057.JPG
+    - lib/studies/shrine/assets/IMG_2058.JPG
+    - lib/studies/shrine/assets/IMG_2062.JPG
+    - lib/studies/shrine/assets/IMG_2063.JPG
+    - lib/studies/shrine/assets/IMG_155245.JPG
+    - lib/studies/shrine/assets/IMG_155249.JPG
     - lib/studies/merienda_tracker/assets/heart.png
     - lib/studies/merienda_tracker/assets/visited.png
     - lib/studies/merienda_tracker/assets/2.0x/heart.png

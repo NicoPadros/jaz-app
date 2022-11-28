@@ -332,86 +332,186 @@ class ProductsRepository {
         price: 24,
         assetAspectRatio: 222 / 329,
       ),
-      // Product(
-      //   category: categoryFav,
-      //   id: 1730,
-      //   isFeatured: false,
-      //   isVideo: true,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductSunshirtDress,
-      //   price: 58,
-      //   assetAspectRatio: 219 / 329,
-      // ),
-      // Product(
-      //   category: categoryFav,
-      //   id: 1771,
-      //   isFeatured: true,
-      //   isVideo: true,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
-      //   price: 58,
-      //   assetAspectRatio: 219 / 329,
-      // ),
-      // Product(
-      //   category: categoryFav,
-      //   id: 1774,
-      //   isFeatured: false,
-      //   isVideo: true,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductSunshirtDress,
-      //   price: 58,
-      //   assetAspectRatio: 219 / 329,
-      // ),
-      // Product(
-      //   category: categoryFav,
-      //   id: 1783,
-      //   isFeatured: true,
-      //   isVideo: true,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
-      //   price: 58,
-      //   assetAspectRatio: 219 / 329,
-      // ),
-      // Product(
-      //   category: categoryFav,
-      //   id: 1785,
-      //   isFeatured: false,
-      //   isVideo: true,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductSunshirtDress,
-      //   price: 58,
-      //   assetAspectRatio: 219 / 329,
-      // ),
-      // Product(
-      //   category: categoryFav,
-      //   id: 1796,
-      //   isFeatured: true,
-      //   isVideo: true,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
-      //   price: 58,
-      //   assetAspectRatio: 219 / 329,
-      // ),
-      // Product(
-      //   category: categoryFav,
-      //   id: 1797,
-      //   isFeatured: false,
-      //   isVideo: true,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductSunshirtDress,
-      //   price: 58,
-      //   assetAspectRatio: 219 / 329,
-      // ),
-      // Product(
-      //   category: categoryFav,
-      //   id: 37,
-      //   isFeatured: true,
-      //   isVideo: true,
-      //   name: (context) =>
-      //       GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
-      //   price: 58,
-      //   assetAspectRatio: 219 / 329,
-      // ),
+      Product(
+        category: categoryMiami,
+        id: 112,
+        isFeatured: false,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductSunshirtDress,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryMiami,
+        id: 439,
+        isFeatured: true,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryMiami,
+        id: 486,
+        isFeatured: false,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductSunshirtDress,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryFav,
+        id: 155245,
+        isFeatured: true,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryMiami,
+        id: 155249,
+        isFeatured: false,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductSunshirtDress,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryMiami,
+        id: 2003,
+        isFeatured: true,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryMiami,
+        id: 2007,
+        isFeatured: false,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductSunshirtDress,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryMiami,
+        id: 2009,
+        isFeatured: true,
+        name: (context) =>
+            GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryMiami,
+        id: 2014,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryMiami,
+        id: 2015,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryFav,
+        id: 2016,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryMiami,
+        id: 2018,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryMiami,
+        id: 2019,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryMiami,
+        id: 2021,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryMiami,
+        id: 2022,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryMiami,
+        id: 2023,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryMiami,
+        id: 2057,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryMiami,
+        id: 2058,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryMiami,
+        id: 2062,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryFav,
+        id: 2063,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
     ];
     allProducts.shuffle();
     if (category == categoryAll) {
