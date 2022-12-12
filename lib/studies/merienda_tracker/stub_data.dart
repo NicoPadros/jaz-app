@@ -103,7 +103,7 @@ class StubData {
       latLng: LatLng(-34.435097604729506, -58.82903790794018),
       name: 'Trufa',
       description: 'Restaurante/rooftop. Comida muy buena',
-      category: PlaceCategory.wantToGo,
+      category: PlaceCategory.visited,
       starRating: 4,
     ),
     Place(
@@ -137,9 +137,9 @@ class StubData {
       id: '16',
       latLng: LatLng(-34.44457100588529, -58.874620125995385),
       name: 'Circo Rodas',
-      description: 'El mejor lugar del universo',
-      category: PlaceCategory.wantToGo,
-      starRating: 5,
+      description: 'Mejorame la ventilación',
+      category: PlaceCategory.visited,
+      starRating: 3,
     ),
     Place(
       id: '17',

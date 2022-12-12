@@ -54,6 +54,14 @@ Category categoryPuertoMadero = Category(
   name: (context) => 'SUSHI NIGHT',
 );
 
+Category categoryCena = Category(
+  name: (context) => 'Cena',
+);
+
+Category categoryCirco = Category(
+  name: (context) => 'RODAS',
+);
+
 List<Category> categories = [
   categoryAll,
   categoryTigre,
@@ -63,7 +71,9 @@ List<Category> categories = [
   categoryFav,
   categoryPuertoMadero,
   categoryDisney,
-  categoryMiami
+  categoryMiami,
+  categoryCena,
+  categoryCirco,
 ];
 
 class Product {

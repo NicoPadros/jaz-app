@@ -512,6 +512,96 @@ class ProductsRepository {
         price: 58,
         assetAspectRatio: 219 / 329,
       ),
+      Product(
+        category: categoryFav,
+        id: 1754,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryFav,
+        id: 1878,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryFav,
+        id: 1915,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryFav,
+        id: 2066,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryCena,
+        id: 2117,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryCena,
+        id: 2127,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryCena,
+        id: 2131,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryCena,
+        id: 2133,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryCirco,
+        id: 2143,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryCirco,
+        id: 2146,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
     ];
     allProducts.shuffle();
     if (category == categoryAll) {
