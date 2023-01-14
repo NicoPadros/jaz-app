@@ -9,8 +9,6 @@ import 'package:gallery/deferred_widget.dart';
 import 'package:gallery/main.dart';
 import 'package:gallery/pages/demo.dart';
 import 'package:gallery/pages/home.dart';
-import 'package:gallery/studies/crane/app.dart' deferred as crane;
-import 'package:gallery/studies/crane/routes.dart' as crane_routes;
 import 'package:gallery/studies/fortnightly/app.dart' deferred as fortnightly;
 import 'package:gallery/studies/fortnightly/routes.dart' as fortnightly_routes;
 import 'package:gallery/studies/merienda_tracker/app.dart';

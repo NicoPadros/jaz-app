@@ -1,4 +1,4 @@
-include ':app', ':crane'
+include ':app'
 
 enableFeaturePreview('ONE_LOCKFILE_PER_PROJECT')
 
