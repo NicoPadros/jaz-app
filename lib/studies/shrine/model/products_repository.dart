@@ -602,6 +602,51 @@ class ProductsRepository {
         price: 58,
         assetAspectRatio: 219 / 329,
       ),
+      Product(
+        category: categoryColonia,
+        id: 43,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryColonia,
+        id: 378,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryColonia,
+        id: 413,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryColonia,
+        id: 173600,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
+      Product(
+        category: categoryColonia,
+        id: 173930,
+        isFeatured: true,
+        name: (context) =>
+        GalleryLocalizations.of(context)!.shrineProductFineLinesTee,
+        price: 58,
+        assetAspectRatio: 219 / 329,
+      ),
     ];
     allProducts.shuffle();
     if (category == categoryAll) {
