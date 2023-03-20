@@ -91,7 +91,7 @@ jobs:
       - run: flutter doctor -v
       # Checkout gallery code, recreate missing files, and get packages.
       - name: Checkout gallery code
-        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f
       - run: flutter create .
       - run: flutter pub get
 
