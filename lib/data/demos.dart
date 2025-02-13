@@ -30,8 +30,6 @@ import 'package:gallery/demos/reference/motion_demo_shared_y_axis_transition.dar
 import 'package:gallery/demos/reference/motion_demo_shared_z_axis_transition.dart';
 import 'package:gallery/demos/reference/transformations_demo.dart'
     deferred as transformations_demo;
-import 'package:gallery/demos/reference/two_pane_demo.dart'
-    deferred as twopane_demo;
 import 'package:gallery/demos/reference/typography_demo.dart'
     deferred as typography;
 
@@ -1232,57 +1230,6 @@ class Demos {
 
   static List<GalleryDemo> otherDemos(GalleryLocalizations localizations) {
     return [
-      GalleryDemo(
-        title: localizations.demoTwoPaneTitle,
-        icon: GalleryIcons.bottomSheetPersistent,
-        slug: 'two-pane',
-        subtitle: localizations.demoTwoPaneSubtitle,
-        configurations: [
-          GalleryDemoConfiguration(
-            title: localizations.demoTwoPaneFoldableLabel,
-            description: localizations.demoTwoPaneFoldableDescription,
-            documentationUrl:
-                'https://pub.dev/documentation/dual_screen/latest/dual_screen/TwoPane-class.html',
-            buildRoute: (_) => DeferredWidget(
-              twopane_demo.loadLibrary,
-              () => twopane_demo.TwoPaneDemo(
-                type: twopane_demo.TwoPaneDemoType.foldable,
-                restorationId: 'two_pane_foldable',
-              ),
-            ),
-            code: CodeSegments.twoPaneDemo,
-          ),
-          GalleryDemoConfiguration(
-            title: localizations.demoTwoPaneTabletLabel,
-            description: localizations.demoTwoPaneTabletDescription,
-            documentationUrl:
-                'https://pub.dev/documentation/dual_screen/latest/dual_screen/TwoPane-class.html',
-            buildRoute: (_) => DeferredWidget(
-              twopane_demo.loadLibrary,
-              () => twopane_demo.TwoPaneDemo(
-                type: twopane_demo.TwoPaneDemoType.tablet,
-                restorationId: 'two_pane_tablet',
-              ),
-            ),
-            code: CodeSegments.twoPaneDemo,
-          ),
-          GalleryDemoConfiguration(
-            title: localizations.demoTwoPaneSmallScreenLabel,
-            description: localizations.demoTwoPaneSmallScreenDescription,
-            documentationUrl:
-                'https://pub.dev/documentation/dual_screen/latest/dual_screen/TwoPane-class.html',
-            buildRoute: (_) => DeferredWidget(
-              twopane_demo.loadLibrary,
-              () => twopane_demo.TwoPaneDemo(
-                type: twopane_demo.TwoPaneDemoType.smallScreen,
-                restorationId: 'two_pane_single',
-              ),
-            ),
-            code: CodeSegments.twoPaneDemo,
-          ),
-        ],
-        category: GalleryDemoCategory.other,
-      ),
       GalleryDemo(
         title: localizations.demoMotionTitle,
         icon: GalleryIcons.animation,

@@ -16,14 +16,13 @@ dependencies:
   animations: ^2.0.2
   collection: ^1.16.0
   cupertino_icons: ^1.0.4
-  dual_screen: ^1.0.3
   flutter_gallery_assets: ^1.0.2
   flutter_localized_locales: ^2.0.3
-  flutter_staggered_grid_view: ^0.6.1
-  google_fonts: ^3.0.1
-  intl: ^0.17.0
+  flutter_staggered_grid_view: ^0.7.0
+  google_fonts: ^6.2.0
+  intl: ^0.19.0
   meta: ^1.7.0
-  package_info_plus: ^1.4.2
+  package_info_plus: ^4.2.0
   path_provider: ^2.0.11
   provider: ^6.0.2
   rally_assets: ^3.0.1
@@ -33,8 +32,11 @@ dependencies:
   url_launcher: ^6.1.2
   vector_math: ^2.1.2
   google_maps_flutter: ^2.0.6
-  google_maps_flutter_web: ">=0.3.0+1 <0.5.0"
-  uuid: ^3.0.4
+  google_maps_flutter_web: ^0.5.4+3
+  uuid: ^4.2.2
+  firebase_auth: ^4.15.0
+  cloud_firestore: ^4.14.0
+  json_serializable: ^6.9.4
 
 
 dev_dependencies:
@@ -43,12 +45,13 @@ dev_dependencies:
   flutter_driver:
     sdk: flutter
   args: ^2.3.1
-  flutter_lints: ^2.0.1
+  flutter_lints: ^4.0.0
   grinder: ^0.9.1
   path: ^1.8.1
   string_scanner: ^1.1.0
   test: ^1.21.1
   web_benchmarks: ^0.1.0
+  build_runner: ^2.4.15
 
 flutter:
 

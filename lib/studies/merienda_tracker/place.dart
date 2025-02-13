@@ -2,8 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+import 'dart:js_interop';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+@JsonSerializable()
 class Place {
   final String id;
   final LatLng latLng;
@@ -24,6 +28,10 @@ class Place {
   double get latitude => latLng.latitude;
 
   double get longitude => latLng.longitude;
+
+  factory Place.fromJson(Map<String, dynamic> json) => _$PlaceFromJson(json);
+
+  Map<String, dynamic> toJson() => _$PlaceToJson(this);
 
   Place copyWith({
     String? id,

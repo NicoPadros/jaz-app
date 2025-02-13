@@ -2,7 +2,6 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:dual_screen/dual_screen.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:gallery/deferred_widget.dart';
@@ -14,8 +13,6 @@ import 'package:gallery/studies/fortnightly/routes.dart' as fortnightly_routes;
 import 'package:gallery/studies/merienda_tracker/app.dart';
 import 'package:gallery/studies/rally/app.dart' deferred as rally;
 import 'package:gallery/studies/rally/routes.dart' as rally_routes;
-import 'package:gallery/studies/reply/app.dart' as reply;
-import 'package:gallery/studies/reply/routes.dart' as reply_routes;
 import 'package:gallery/studies/shrine/app.dart' deferred as shrine;
 import 'package:gallery/studies/shrine/routes.dart' as shrine_routes;
 import 'package:gallery/studies/starter/app.dart' as starter_app;
@@ -135,17 +132,10 @@ class RouteConfiguration {
             settings: settings,
           );
         }
-        if (path.openInSecondScreen) {
-          return TwoPanePageRoute<void>(
-            builder: (context) => path.builder(context, match),
-            settings: settings,
-          );
-        } else {
           return MaterialPageRoute<void>(
             builder: (context) => path.builder(context, match),
             settings: settings,
           );
-        }
       }
     }
 
@@ -168,31 +158,5 @@ class NoAnimationMaterialPageRoute<T> extends MaterialPageRoute<T> {
     Widget child,
   ) {
     return child;
-  }
-}
-
-class TwoPanePageRoute<T> extends OverlayRoute<T> {
-  TwoPanePageRoute({
-    required this.builder,
-    super.settings,
-  });
-
-  final WidgetBuilder builder;
-
-  @override
-  Iterable<OverlayEntry> createOverlayEntries() sync* {
-    yield OverlayEntry(builder: (context) {
-      final hinge = MediaQuery.of(context).hinge?.bounds;
-      if (hinge == null) {
-        return builder.call(context);
-      } else {
-        return Positioned(
-            top: 0,
-            left: hinge.right,
-            right: 0,
-            bottom: 0,
-            child: builder.call(context));
-      }
-    });
   }
 }

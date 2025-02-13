@@ -4,7 +4,6 @@
 
 import 'dart:math';
 
-import 'package:dual_screen/dual_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
 import 'package:gallery/constants.dart';
@@ -148,23 +147,6 @@ class _SplashPageState extends State<SplashPage>
                 ),
               );
             }
-
-            if (isDisplayFoldable(context)) {
-              return TwoPane(
-                startPane: frontLayer,
-                endPane: GestureDetector(
-                  onTap: () {
-                    if (_isSplashVisible) {
-                      _controller.reverse();
-                    } else {
-                      _controller.forward();
-                    }
-                  },
-                  child: _SplashBackLayer(
-                      isSplashCollapsed: !_isSplashVisible, effect: _effect),
-                ),
-              );
-            } else {
               return Stack(
                 children: [
                   _SplashBackLayer(
@@ -180,7 +162,6 @@ class _SplashPageState extends State<SplashPage>
                   ),
                 ],
               );
-            }
           },
         ),
       ),
